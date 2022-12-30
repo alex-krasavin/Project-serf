@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;800&display=swap');
+// Base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/base";
+
+
+//blocks
+@import "./blocks/global";
+@import "./blocks/nav";
+// section
+@import "./section/header";
