@@ -1,0 +1,247 @@
+.surf-slider-map {
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 635px;
+    background-image: url(../img/surf/world-map-dots.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .slick-list {
+        min-height: 635px;
+    }
+
+    .slick-track {
+        transform: translateX(30px) !important;
+    }
+}
+
+.surf-slider-dots {
+    position: relative;
+
+
+    &.slick-current {
+        .surf-slider-dots__content {
+            display: block;
+        }
+    }
+}
+
+.surf-slider-dots__circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: $accent-color;
+}
+
+.slider-dots--1 {
+    top: 300px;
+    left: -2%;  
+    
+    .surf-slider-dots__content {
+        transform: translateX(0);
+
+        &::before {
+            left: 0;
+        }
+    }
+}
+
+.slider-dots--2 {
+    top: 250px;
+    left: -2%;
+
+  
+}
+
+.slider-dots--3 {
+    top: 290px;
+    left: 0;
+}
+
+.slider-dots--4 {
+    top: 455px;
+    left: -5%;
+}
+
+.slider-dots--5 {
+    top: 180px;
+    left: -5%;
+    .surf-slider-dots__content {
+        transform: translate(10%,80%);
+
+        &::before {
+            top: 45px;
+            left: -28px;
+        }
+    }
+}
+
+.slider-dots--6 {
+    top: 540px;
+    left: -14%;
+}
+
+.slider-dots--7 {
+    top: 360px;
+    left: -10%;
+}
+
+.slider-dots--8 {
+    top: 470px;
+    left: 0;
+
+    .surf-slider-dots__content {
+        transform: translateX(-70%);
+
+        &::before {
+            left: 70%;
+        }
+    }
+}
+
+
+.surf-slider-dots__content {
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 283px;
+    padding: 30px 32px;
+
+    transform: translateX(-45%);
+    background-color:rgba(15, 16, 16, 0.7);
+    border-radius: 6px;
+    // делаем треугольник для капли
+    &::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-bottom: 20px solid $accent-color;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        bottom: -15px;
+        left: 45%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+.surf-slider-dots__row {
+    display: flex;
+    flex-shrink: 0;
+
+    .surf-slider-dots__item + .surf-slider-dots__item {
+        margin-left: 50px;
+    }
+}
+
+.surf-slider-dots__description {
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.surf-slider-dots__title {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.surf-slider-dots__subtitle {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+// .surf-slider-dots__link {
+
+// }
+
+.surf-slider-dots__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+}
+.sufr-slider-dots__indication {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.surf-slider {
+    padding-top: 110px;
+
+    .slider-arrows {
+        top: 50px;
+        opacity: 0.25;
+    }
+
+    .slick-slide:nth-child(4n + 1) {
+        margin-top: 32px;
+    }
+    .slick-slide:nth-child(4n + 3) {
+        margin-top: 89px;
+    }
+}
+
+.surf-box {
+    width: 390px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    color: #FFFFFF;
+
+    &.slick-current {
+        .surf-box__overlay{
+            background-color:rgba(28, 33, 33, 0.3);
+        }
+
+        .surf-box__btn {
+            display: block;
+        }
+    }
+}
+
+.surf-box__overlay {
+    position: relative;
+    min-height: 750px;
+    padding-top: 72px;
+    padding-left: 40px;
+    background-color: rgba(28, 33, 33, 0.85);
+}
+
+.surf-box__title {
+    max-width: 155px;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.surf-box__location {
+    position: absolute;
+    bottom: 80px;
+    writing-mode: vertical-rl;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    transform: rotate(180deg);
+
+    span {
+        font-weight: 100;
+    }
+}
+
+.surf-box__btn {
+    display: none;
+    position: absolute;
+    bottom: 19px;
+}
+
