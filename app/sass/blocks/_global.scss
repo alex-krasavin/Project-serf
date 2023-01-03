@@ -10,8 +10,6 @@
     text-transform: uppercase;
 
     color: #FFFFFF;
-
-    mix-blend-mode: normal;
     opacity: 0.5;
 
     &::before {
@@ -62,4 +60,35 @@
 
 .slider-arrows__left {
     right: 125px;
+}
+
+
+.description-left {
+    padding-left: 136px;
+}
+
+.subtitle-right {
+    display: inline-block;
+    position: relative;
+    padding-right: 103px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    /* identical to box height, or 145% */
+    letter-spacing: 7.33333px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    opacity: 0.5;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 80px;
+        height: 1px;
+        background: #FFFFFF;
+        opacity: 0.5;
+    }
 }

@@ -29,3 +29,10 @@ $(".surf-slider-map").slick({
     arrows: false,
     focusOnSelect:true
 });
+
+$(".travel-slider").slick({
+    prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/header/arrows-left.svg">',
+    nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/header/arrows-right.svg">',
+    infinite:true,
+    fade:true,
+});
