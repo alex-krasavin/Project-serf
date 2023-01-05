@@ -1,21 +1,21 @@
-.travel-slider {
+.holder-slider {
     .slider-arrows {
         top: 240px;
         opacity: 0.5;
     }
 }
 
-.travel-slider__head {
+.holder-slider__head {
     min-height: 780px;
     background-repeat: no-repeat;
 }
 
 
-.travel-slider__subtitle {
+.holder-slider__subtitle {
     padding-top: 132px;
 }
 
-.travel-slider__descr {
+.holder-slider__descr {
     margin-top: -290px;
     padding-top: 175px;
     min-height: 310px;
@@ -24,25 +24,25 @@
     background-position: top right ;
 }
 
-.travel-slider__avia-logo {
+.holder-slider__avia-logo {
     display: inline-block;
     margin-left: 25px;
 }
 
-.travel-slider__info {
+.holder-slider__info {
     display: flex;
     justify-content: space-around;
     margin-top: 80px;
     margin-bottom: 66px;
 }
 
-.travel-slider__info-item {
+.holder-slider__info-item {
     position: relative;
     max-width: 300px;
     min-height: 200px;
 }
 
-.travel-slider__item-descr {
+.holder-slider__item-descr {
     display: inline-block;
     position: absolute;
     top: 85px;
@@ -59,7 +59,7 @@
     transform: rotate(-90deg);
 }
 
-.travel-slider__item-title {
+.holder-slider__item-title {
     position: relative;
     padding-left: 40px;
     font-weight: 800;
@@ -67,7 +67,7 @@
     line-height: 36px;
     text-transform: uppercase;
 
-    span {
+    .descr {
         position: absolute;
         bottom: -30px;
         right: 0;
@@ -80,7 +80,7 @@
     }
 }
 
-.travel-slider__btn {
+.holder-slider__btn {
     padding-bottom: 20px;
     text-align: center;
 }
