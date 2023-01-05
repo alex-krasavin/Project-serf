@@ -3,11 +3,111 @@
         top: 240px;
         opacity: 0.5;
     }
+
+    &.shop {
+        .slider-arrows{
+            top: 0;
+        }
+    }
+
+    &__shop-content {
+        display: flex;
+    }
+
+    &__shop-text {
+        width: 490px;
+        padding-top: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        p {
+            max-width: 290px;
+            margin-bottom: 200px;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        span {
+            margin-bottom: 25px;
+            padding-left: 70px;
+            font-weight: 800;
+            font-size: 28px;
+            line-height: 40px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__shop-img {
+        margin-right: 76px;
+    }
+
+    &__shop-product {
+        display: flex;
+    }
+
+    &__shop-model {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &+.holder-slider__shop-model {
+            margin-left: 60px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            opacity: 0.5;
+        }
+
+        span {
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+
+        img {
+            margin-bottom: 36px;
+            min-height: 105px;
+        }
+    }
 }
 
 .holder-slider__head {
     min-height: 780px;
     background-repeat: no-repeat;
+
+    &.shop {
+        display: flex;
+        flex-shrink: 0;
+        justify-content: space-between;
+        background-position: right;
+    }
+}
+
+.holder-slider__item-price {
+    position: relative;
+    max-width: 100px;
+    margin-top: 9px;
+    margin-bottom: 64px;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    &::after {
+        content: "99";
+        position: absolute;
+        top: -5px;
+        right: 5px;
+        font-size: 18px;
+    }
 }
 
 
@@ -22,6 +122,12 @@
 
     background-repeat: no-repeat;
     background-position: top right ;
+
+    &.shop {
+        max-width: 500px;
+        margin-top: 0;
+        min-height: unset;
+    }
 }
 
 .holder-slider__avia-logo {

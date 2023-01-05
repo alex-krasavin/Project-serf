@@ -43,6 +43,13 @@
     span {
         font-weight: 100;
     }
+
+    &.shop {
+        word-wrap: break-word;
+        margin-top: 8px;
+        margin-bottom: 48px;
+        line-height: 1;
+    }
 }
 
 .section-subtitle {
