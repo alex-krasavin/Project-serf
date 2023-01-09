@@ -18,7 +18,27 @@ window.addEventListener("DOMContentLoaded",() => {
         nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/header/arrows-right.svg">',
         slidesToShow: 4,
         slidesToScroll: 1,
-        asNavFor: ".surf-slider-map"
+        asNavFor: ".surf-slider-map",
+        responsive: [
+            {
+              breakpoint: 1300,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+            {
+                breakpoint: 821,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 641,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+          ]
     });
     
     
@@ -78,4 +98,15 @@ window.addEventListener("DOMContentLoaded",() => {
             item.addEventListener("click",()=> getResult (currentSlide) )
         })
     });
+
+// mob menu
+    $(".mob-menu").on("click", () => {
+        $(".menu").toggleClass("active")
+    })
+
+    $(".menu").on("click", () => {
+        if($(".menu").hasClass("active")) {
+            $(".menu").toggleClass("active")
+        }
+    })
 });

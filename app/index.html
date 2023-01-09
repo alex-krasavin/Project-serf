@@ -36,6 +36,11 @@
 <body>
     <!-- header -->
     <header class="header">
+        <button class="mob-menu">
+            <span class="mob-menu__item"></span>
+            <span class="mob-menu__item"></span>
+            <span class="mob-menu__item"></span>
+        </button>
         <div class="header__title">Go Surf</div>
         <div class="header__map">
             <svg width="1001" height="496" viewBox="0 0 1001 496" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,14 +60,14 @@
         <div class="header__aside">
             <div class="header__aside-bg"></div>
             <div class="logo">
-                <a href="#" class="logo__link">go serf</a>  
+                <a href="#" class="logo__link">go-serf</a>  
             </div>
             <nav class="menu">
                 <ul class="menu__list">
-                    <li class="menu__item"><a href="#" class="menu__link"><img src="./img/header/nav-icon/surf.svg" alt="surf">surf</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link"><img src="./img/header/nav-icon/travel.svg" alt="travel">travel</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link"><img src="./img/header/nav-icon/camp.svg" alt="camp">sleep</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link"><img src="./img/header/nav-icon/surfboard.svg" alt="surfboard">shop</a></li>
+                    <li class="menu__item"><a href="#surf" class="menu__link"><img src="./img/header/nav-icon/surf.svg" alt="surf">surf</a></li>
+                    <li class="menu__item"><a href="#travel" class="menu__link"><img src="./img/header/nav-icon/travel.svg" alt="travel">travel</a></li>
+                    <li class="menu__item"><a href="#sleep" class="menu__link"><img src="./img/header/nav-icon/camp.svg" alt="camp">sleep</a></li>
+                    <li class="menu__item"><a href="#shop" class="menu__link"><img src="./img/header/nav-icon/surfboard.svg" alt="surfboard">shop</a></li>
                 </ul>
             </nav>
 
@@ -154,13 +159,13 @@
         </div>
         <!-- //slider dots -->
         <div class="header__arrows">
-            <a href="#!" class="animate__animated  animate__fadeInDown animate__infinite infinite"><img src="./img/header/down-arrows.svg" alt="down-arrows"></a>
+            <a href="#surf" class="animate__animated  animate__fadeInDown animate__infinite infinite"><img src="./img/header/down-arrows.svg" alt="down-arrows"></a>
         </div>
     </header>
     <!-- // header -->
     <main class="main">
         <!-- surf -->
-        <section class="surf">
+        <section class="surf" id="surf">
             <div class="section-title">
                 <h2 class="title-02">Surf</h2>
                 <span class="section-title-text">Surf</span>
@@ -424,61 +429,63 @@
             <!-- // Slider-map -->
 
             <!-- surf slider -->
-            <div class="surf-slider">
-                <div class="surf-box" style="background-image: url(./img/surf/surf-slide-1.jpg);">
-                    <div class="surf-box__overlay">
-                        <h4 class="surf-box__title">Malibu Beach</h4>
-                        <span class="surf-box__location">California <span>|</span> USA</span>
-                        <div class="surf-box__btn"><a href="!#" class="btn">View <span>Surf</span></a></div>
+            <div class="container-serf">
+                <div class="surf-slider">
+                    <div class="surf-box" style="background-image: url(./img/surf/surf-slide-1.jpg);">
+                        <div class="surf-box__overlay">
+                            <h4 class="surf-box__title">Malibu Beach</h4>
+                            <span class="surf-box__location">California <span>|</span> USA</span>
+                            <div class="surf-box__btn"><a href="!#" class="btn">View <span>Surf</span></a></div>
+                        </div>
                     </div>
-                </div>
-                <div class="surf-box" style="background-image: url(./img/surf/surf-slide-2.jpg);">
-                    <div class="surf-box__overlay">
-                        <h4 class="surf-box__title">Airlie Beach</h4>
-                        <p class="surf-box__location">Queensland <span>|</span> Australia</p>
-                        <div class="surf-box__btn"><a href="!#" class="btn">View <span>Surf</span></a></div>
+                    <div class="surf-box" style="background-image: url(./img/surf/surf-slide-2.jpg);">
+                        <div class="surf-box__overlay">
+                            <h4 class="surf-box__title">Airlie Beach</h4>
+                            <p class="surf-box__location">Queensland <span>|</span> Australia</p>
+                            <div class="surf-box__btn"><a href="!#" class="btn">View <span>Surf</span></a></div>
+                        </div>
                     </div>
-                </div>
-                <div class="surf-box" style="background-image: url(./img/surf/surf-slide-3.jpg);">
-                    <div class="surf-box__overlay">
-                        <h4 class="surf-box__title">Cloud Nine</h4>
-                        <p class="surf-box__location">Siargao <span>|</span> Philippines</p>
-                        <div class="surf-box__btn"><a href="!#" class="btn">View <span>Surf</span></a></div>
+                    <div class="surf-box" style="background-image: url(./img/surf/surf-slide-3.jpg);">
+                        <div class="surf-box__overlay">
+                            <h4 class="surf-box__title">Cloud Nine</h4>
+                            <p class="surf-box__location">Siargao <span>|</span> Philippines</p>
+                            <div class="surf-box__btn"><a href="!#" class="btn">View <span>Surf</span></a></div>
+                        </div>
                     </div>
-                </div>
-                <div class="surf-box" style="background-image: url(./img/surf/surf-slide-4.jpg);">
-                    <div class="surf-box__overlay">
-                        <h4 class="surf-box__title"> Vieux Boucau</h4>
-                        <p class="surf-box__location">Hossegor <span>|</span> France</p>
-                        <div class="surf-box__btn"><a href="!#" class="btn">View <span>Surf</span></a></div>
+                    <div class="surf-box" style="background-image: url(./img/surf/surf-slide-4.jpg);">
+                        <div class="surf-box__overlay">
+                            <h4 class="surf-box__title"> Vieux Boucau</h4>
+                            <p class="surf-box__location">Hossegor <span>|</span> France</p>
+                            <div class="surf-box__btn"><a href="!#" class="btn">View <span>Surf</span></a></div>
+                        </div>
                     </div>
-                </div>
-                <div class="surf-box" style="background-image: url(./img/surf/surf-slide-1.jpg);">
-                    <div class="surf-box__overlay">
-                        <h4 class="surf-box__title">Malibu Beach</h4>
-                        <span class="surf-box__location">California <span>|</span> USA</span>
-                        <div class="surf-box__btn"><a href="!#" class="btn">View <span>Surf</span></a></div>
+                    <div class="surf-box" style="background-image: url(./img/surf/surf-slide-1.jpg);">
+                        <div class="surf-box__overlay">
+                            <h4 class="surf-box__title">Malibu Beach</h4>
+                            <span class="surf-box__location">California <span>|</span> USA</span>
+                            <div class="surf-box__btn"><a href="!#" class="btn">View <span>Surf</span></a></div>
+                        </div>
                     </div>
-                </div>
-                <div class="surf-box" style="background-image: url(./img/surf/surf-slide-2.jpg);">
-                    <div class="surf-box__overlay">
-                        <h4 class="surf-box__title">Airlie Beach</h4>
-                        <p class="surf-box__location">Queensland <span>|</span> Australia</p>
-                        <div class="surf-box__btn"><a href="!#" class="btn">View <span>Surf</span></a></div>
+                    <div class="surf-box" style="background-image: url(./img/surf/surf-slide-2.jpg);">
+                        <div class="surf-box__overlay">
+                            <h4 class="surf-box__title">Airlie Beach</h4>
+                            <p class="surf-box__location">Queensland <span>|</span> Australia</p>
+                            <div class="surf-box__btn"><a href="!#" class="btn">View <span>Surf</span></a></div>
+                        </div>
                     </div>
-                </div>
-                <div class="surf-box" style="background-image: url(./img/surf/surf-slide-3.jpg);">
-                    <div class="surf-box__overlay">
-                        <h4 class="surf-box__title">Cloud Nine</h4>
-                        <p class="surf-box__location">Siargao <span>|</span> Philippines</p>
-                        <div class="surf-box__btn"><a href="!#" class="btn">View <span>Surf</span></a></div>
+                    <div class="surf-box" style="background-image: url(./img/surf/surf-slide-3.jpg);">
+                        <div class="surf-box__overlay">
+                            <h4 class="surf-box__title">Cloud Nine</h4>
+                            <p class="surf-box__location">Siargao <span>|</span> Philippines</p>
+                            <div class="surf-box__btn"><a href="!#" class="btn">View <span>Surf</span></a></div>
+                        </div>
                     </div>
-                </div>
-                <div class="surf-box" style="background-image: url(./img/surf/surf-slide-4.jpg);">
-                    <div class="surf-box__overlay">
-                        <h4 class="surf-box__title"> Vieux Boucau</h4>
-                        <p class="surf-box__location">Hossegor <span>|</span> France</p>
-                        <div class="surf-box__btn"><a href="!#" class="btn">View <span>Surf</span></a></div>
+                    <div class="surf-box" style="background-image: url(./img/surf/surf-slide-4.jpg);">
+                        <div class="surf-box__overlay">
+                            <h4 class="surf-box__title"> Vieux Boucau</h4>
+                            <p class="surf-box__location">Hossegor <span>|</span> France</p>
+                            <div class="surf-box__btn"><a href="!#" class="btn">View <span>Surf</span></a></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -487,7 +494,7 @@
         <!-- //surf -->
 
         <!-- Travel -->
-        <section class="holder holder--travel">
+        <section class="holder holder--travel" id="travel">
             <div class="section-title">
                 <h2 class="title-02">Travel</h2>
                 <span class="section-title-text">Travel</span>
@@ -821,7 +828,7 @@
         <!-- //Travel -->
 
         <!-- Sleep -->
-        <section class="holder holder--sleep">
+        <section class="holder holder--sleep" id="sleep">
             <div class="section-title">
                 <h2 class="title-02">Sleep</h2>
                 <span class="section-title-text">Sleep</span>
@@ -1371,7 +1378,7 @@
         <!-- //Sleep -->
 
         <!-- Shop -->
-        <section class="holder holder--shop">
+        <section class="holder holder--shop" id="shop">
             <div class="section-title">
                 <h2 class="title-02">Shop</h2>
                 <span class="section-title-text">Shop</span>
